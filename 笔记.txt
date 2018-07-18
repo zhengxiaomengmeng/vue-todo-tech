@@ -1,0 +1,24 @@
+cross-env：使得代码在各个系统上实现兼容
+	安装方式：npm install --save-dev cross-env
+	使用：{
+ 		 "scripts": {
+ 		   "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.js"
+  		}
+	       }
+
+html-webpack-plugin:让程序生成一个主的HTML文件，可以在前端显示
+	安装方式：npm install html-webpack-plugin
+
+ config.devtool = '#cheap-module-eval-source-map'   对于es6，不能在后台显示，就要用这个工具来调试程序
+
+postcss-loader：后优化css样式，使用autoprefixer()，自动优化
+		postcss.config.js的配置文件
+		const autoprefixer = require('autoprefixer')
+
+			module.exports = {
+  				plugins: [
+    					autoprefixer()
+ 				 ]
+			}
+
+
